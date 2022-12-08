@@ -12,6 +12,7 @@ function Square({ hasBomb, key }) {
 
   useEffect(() => {
     hasBomb ? reveal() : explode();
+    // Rafael é viado
   })
 
   return <div className={styles.square}></div>
