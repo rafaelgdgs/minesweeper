@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import styles from "./Square.module.css";
 
-function Square({ hasBomb }) {
+function Square({ hasBomb, key }) {
 
   function reveal() {
     console.log("Reveal");
@@ -11,7 +11,7 @@ function Square({ hasBomb }) {
   }
 
   useEffect(() => {
-    hasBomb ? reveal() : explode()
+    hasBomb ? reveal() : explode();
   })
 
   return <div className={styles.square}></div>

@@ -6,7 +6,7 @@ function Board({ rows, columns }) {
 
   let board = Array(rows)
     .fill(0)
-    .map((row) => new Array(columns).fill(<Square hasBomb={Math.random() > 0.1 ? true : false} />));
+    .map((row) => new Array(columns).fill(<Square hasBomb={Math.random() > 0.250 ? true : false} />));
   
 
   return (
